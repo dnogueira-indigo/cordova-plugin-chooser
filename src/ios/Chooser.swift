@@ -22,6 +22,11 @@ class Chooser : CDVPlugin {
 		let accept = command.arguments.first as! String
 		self.getFilesInternal(accept: accept, allowMultiple: true)
 	}
+	
+	@objc(getString:)
+	func getString () {
+		return "Teste";
+	}
 
 	func getFilesInternal (accept: String, allowMultiple: Bool) {
 		let mimeTypes = accept.components(separatedBy: ",")
