@@ -65,7 +65,7 @@ module.exports = {
         }
 
         return result;
-    }
+    },
 	
 	getString: function(accept, successCallback, failureCallback) {
         var result = new Promise(function (resolve, reject) {
